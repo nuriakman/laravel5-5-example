@@ -46,7 +46,7 @@
 * Contact us page
 * Admin dashboard with users, posts, articles, medias, settings, notifications and comments
 * Multi users medias gestion
-* Localization
+* Localization (English, French and Chinese)
 * Application tests
 * Thumbs creation for images
 * Notifications to send emails and notify redactors for new comments
@@ -66,7 +66,7 @@ When you want to launch the tests refresh and populate the database :
 
 `php artisan migrate:fresh --seed`
 
-You must have default settings and en language.
+You must have default settings and **en** language. You must also add provider in **config/app.php**.
 
 You can then use Dusk.
 

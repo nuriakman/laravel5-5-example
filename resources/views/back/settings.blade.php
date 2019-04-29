@@ -1,7 +1,7 @@
 @extends('back.layout')
 
 @section('css')
-    <link rel="stylesheet" href="/adminlte/plugins/bootstrap-slider/slider.css">
+    <link rel="stylesheet" href="{{ asset('adminlte/plugins/bootstrap-slider/slider.css') }}">
 @endsection
 
 @section('main')
@@ -45,8 +45,8 @@
                                     @include('back.partials.input', [
                                         'input' => [
                                             'title' => __('Application name'),
-                                            'name' => 'name',
-                                            'value' => old('name', config('app.name')),
+                                            'name' => 'app_name',
+                                            'value' => old('app_name', config('app.name')),
                                             'input' => 'text',
                                             'required' => true,
                                         ],
@@ -340,7 +340,7 @@
 @endsection
 
 @section('js')
-    <script src="/adminlte/plugins/bootstrap-slider/bootstrap-slider.js"></script>
+    <script src="{{ asset('adminlte/plugins/bootstrap-slider/bootstrap-slider.js') }}"></script>
     <script>
         $(function() {
             $('.slider').slider()
