@@ -17,6 +17,7 @@
    * set DB_PASSWORD
 * if you use sqlite :
    * type `touch database/database.sqlite` to create the file
+* type `php artisan vendor:publish --provider="Bestmomo\LaravelEmailConfirmation\ServiceProvider" --tag="confirmation:migrations"` to publish email confirmation migration
 * type `php artisan migrate --seed` to create and populate tables
 * edit *.env* for emails configuration
 
@@ -25,7 +26,7 @@
 * [Styleshout](https://www.styleshout.com/) for front template
 * [CKEditor](http://ckeditor.com) the great editor
 * [Elfinder](https://github.com/Studio-42/elFinder) the nice file manager
-* [Sweat Alert](http://t4t5.github.io/sweetalert/) for the cool alerts
+* [Sweet Alert](http://t4t5.github.io/sweetalert/) for the cool alerts
 * [AdminLTE](https://adminlte.io/themes/AdminLTE/index2.html) the great admin template
 * [Gravatar](https://github.com/creativeorange/gravatar) the Gravatar package
 * [Intervention Image](http://image.intervention.io/) for image manipulation
@@ -46,7 +47,7 @@
 * Contact us page
 * Admin dashboard with users, posts, articles, medias, settings, notifications and comments
 * Multi users medias gestion
-* Localization
+* Localization (English, French and Chinese)
 * Application tests
 * Thumbs creation for images
 * Notifications to send emails and notify redactors for new comments
@@ -66,7 +67,7 @@ When you want to launch the tests refresh and populate the database :
 
 `php artisan migrate:fresh --seed`
 
-You must have default settings and en language.
+You must have default settings and **en** language. You must also add provider in **config/app.php**.
 
 You can then use Dusk.
 
